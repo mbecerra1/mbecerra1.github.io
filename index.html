@@ -25,6 +25,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#conferences">Conferences</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
@@ -42,6 +43,7 @@
                       <li><a href="#about" onclick="toggleMenu()">About</a></li>
                       <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                       <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                      <li><a href="#conferences" onclick="toggleMenu()">Conferences</a></li>
                       <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                     </div>
                   </div>
@@ -275,7 +277,7 @@
                       <div class="details-container color-container">
                         <div class="article-container">
                           <img
-                            src="images\RS.jpg"
+                            src="images\Real State AI.png"
                             alt="Project 1"
                             class="project-img"
                           />
@@ -290,9 +292,10 @@
                           </button>
                           <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
+                            onclick="location.href='https://experience.arcgis.com/experience/83545c8a9e1f4b28970582a62f6f67b3'"
                           >
                             Live Demo
+                            <!-- Project 1 -->
                           </button>
                         </div>
                       </div>
@@ -317,7 +320,8 @@
                             onclick="location.href='https://github.com/'"
                           >
                             Live Demo
-                          </button>
+                            <!-- Project 2 -->
+                          <!-- </button>
                         </div>
                       </div>
                       <div class="details-container color-container">
@@ -341,7 +345,7 @@
                             onclick="location.href='https://github.com/'"
                           >
                             Live Demo
-                          </button>
+                          </button> -->
                         </div>
                       </div>
                     </div>
@@ -356,6 +360,86 @@
                   </figure>
                   </section>
   
+                  <style>
+                    .myPop{
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width:100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(252, 252, 252);
+                    text-align: center;
+                    border: solid;
+                    }    .close{
+                        position: absolute;
+                        top: 5rem;
+                        right: 10rem;
+                        color: #050925;
+                        font-size: 10rem;
+                        font-weight: bold;
+                    }
+                
+                    .close:hover,.close:focus {
+                    color: #bbb;
+                    text-decoration: none;
+                    cursor: pointer;
+                    }
+                    </style>
+
+
+                  <section>
+                    <section id="conferences">
+                      <h1 class="title">Conferences</h1>
+                      <div class="conference-details-container">
+                        <div class="about-containers">
+                          <div class="details-container">
+                            <div class="nav_bar_header1"><h1>Conference in</h1></div>
+                            <div class="nav_bar_header2"><h1>South America</h1></div>
+                            
+                            
+                            <div class="gallery-item">
+                                <img src="images\AmazonTec1.png" 
+                                alt="Tipping points to preserve the Amazonia" class="gallery-img">
+                                <figcaption style="font-size: 50px;">AmazonTEC Conference</figcaption>
+                            </div>
+                            
+                            <div  class="myPop">
+                                <span class="close">&times;</span>
+                                <img id="img_pop" style="margin-top: 10rem;">
+                                <h1 id = "h1_pop"></h1>
+                            </div>
+                            
+                            <script>
+                                        // Get the image and insert it inside the modal
+                                        const images = document.getElementsByClassName("gallery-img");
+                                    //const captionText = document.getElementById("caption");
+                                    
+                                    const pop_w = document.getElementsByClassName("myPop")[0];
+                                    const pop_Img = document.getElementById("img_pop");
+                                    const pop_h1 = document.getElementById("h1_pop")
+                            
+                                    // Loop through all gallery images
+                                    for (let i = 0; i < images.length; i++) {
+                                        images[i].onclick = function() {
+                                            pop_w.style.display = "block";
+                                            pop_Img.src = this.src;
+                                            pop_h1.innerHTML = this.alt
+                                        }
+                                    }
+                                  </script>
+
+                      <img
+                      src="images\arrow.png"
+                      alt="Arrow icon"
+                      class="icon arrow"
+                      onclick="conferences.href='./#conferences'"
+                      />
+                  </section>
+
+
                 </section>
                 <section id="contact">
                   <p class="section__text__p1">Get in Touch</p>
@@ -382,7 +466,12 @@
 
 
 
-        <style>.padding-wrapper { padding: 60px; max-width: 1200px;background-color:#6a9448; border:1px solid #fff; }</style>
+        <style>.padding-wrapper { 
+          padding: 60px; 
+          max-width: 1200px;
+          background-color:#6a9448;
+          border:1px solid #fff; }
+          </style>
         <div class="padding-wrapper">
         <h1>Contact me</h1>
         <div id="mk-boxed-layout"></div> <p><strong>Phone Information:</strong></p> <a href="(978) 916-0134">(978)916-0134</a:

@@ -1,0 +1,9 @@
+.nav_bar{
+    background-color:white
+}
+
+nav ul{
+    justify-content: flex-end;
+    display:inline-flex;
+}
+
