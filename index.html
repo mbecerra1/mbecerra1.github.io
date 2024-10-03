@@ -373,7 +373,8 @@
                     background-color: rgb(252, 252, 252);
                     text-align: center;
                     border: solid;
-                    }    .close{
+                    }   
+                     .close{
                         position: absolute;
                         top: 5rem;
                         right: 10rem;
@@ -429,6 +430,12 @@
                                             pop_h1.innerHTML = this.alt
                                         }
                                     }
+
+                                     var close_button = document.getElementsByClassName("close")[0];
+                                     close_button.onclick = function() {
+                                    pop_w.style.display = "none";
+                                      }
+
                                   </script>
 
                       <img
