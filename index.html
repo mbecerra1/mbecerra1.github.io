@@ -283,69 +283,88 @@
                           />
                         </div>
                         <h2 class="experience-sub-title project-title">Project One</h2>
-                        <div class="btn-container">
-                          <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                          >
-                            Github
-                          </button>
+                          <div class="btn-container">
+                            <!-- <button
+                              class="btn btn-color-2 project-btn"
+                              onclick="location.href='https://github.com/'"
+                            >
+                              Github
+                          </button> -->
                           <button
                             class="btn btn-color-2 project-btn"
                             onclick="location.href='https://experience.arcgis.com/experience/83545c8a9e1f4b28970582a62f6f67b3'"
                           >
                             Live Demo
-                            <!-- Project 1 -->
+                            <!-- Project 2 -->
                           </button>
                         </div>
                       </div>
                       <div class="details-container color-container">
                         <div class="article-container">
                           <img
-                            src="images\RS.jpg"
+                            src="images\webmapMASS.jpg"
                             alt="Project 2"
                             class="project-img"
                           />
                         </div>
                         <h2 class="experience-sub-title project-title">Project Two</h2>
                         <div class="btn-container">
-                          <button
+                          <!-- <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
+                            onclick="location.href='https://github.com/mbecerra1/Massachusetts_Map'"
                           >
                             Github
-                          </button>
+                          </button> -->
                           <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
+                            onclick="location.href='https://mbecerra1.github.io/Massachusetts_Map/'"
                           >
                             Live Demo
-                            <!-- Project 2 -->
-                          <!-- </button>
+
+                            <!-- Project 3 -->
+
+                          </button>
                         </div>
                       </div>
                       <div class="details-container color-container">
                         <div class="article-container">
                           <img
-                            src="images\RS.jpg"
-                            alt="Project 3"
+                            src="images\Terrain.jpg"
+                            alt="Terrain_map"
                             class="project-img"
                           />
                         </div>
                         <h2 class="experience-sub-title project-title">Project Three</h2>
                         <div class="btn-container">
+
                           <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
-                          >
-                            Github
-                          </button>
-                          <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/'"
+                            onclick="location.href='https://mbecerra1.github.io/terrain_map/'"
                           >
                             Live Demo
-                          </button> -->
+
+                            <!-- Project 4 -->
+
+                          </button>
+                        </div>
+                      </div>
+                      <div class="details-container color-container">
+                        <div class="article-container">
+                          <img
+                            src="images\SolarPanel.jpg"
+                            alt="Project 4"
+                            class="project-img"
+                          />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Four</h2>
+                        <div class="btn-container">
+
+                          <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://mbecerra1.github.io/SolarPanel/'"
+                          >
+                            Live Demo
+
                         </div>
                       </div>
                     </div>
@@ -387,11 +406,11 @@
                     color: #bbb;
                     text-decoration: none;
                     cursor: pointer;
-                    }
+                    } */
                     </style>
 
 
-                  <section>
+                  <!-- <section>
                     <section id="conferences">
                       <h1 class="title">Conferences</h1>
                       <div class="conference-details-container">
@@ -406,14 +425,86 @@
                                 alt="Tipping points to preserve the Amazonia" class="gallery-img">
                                 <figcaption style="font-size: 50px;">AmazonTEC Conference</figcaption>
                             </div>
+
                             
                             <div  class="myPop">
                                 <span class="close">&times;</span>
                                 <img id="img_pop" style="margin-top: 10rem;">
                                 <h1 id = "h1_pop"></h1>
                             </div>
-                            
-                            <script>
+                             -->
+
+                             <section>
+          
+                              <section id="conferences">
+                                  <h1 class="title">Conferences</h1>
+                                  <button id="show-conferences-btn">View Conferences</button>
+                                  <div id="conference-container" style="display: none;">
+                                      <div class="conference-details">
+                                          <div class="gallery-item">
+                                              <img src="images/Agriculture.png" 
+                                                   alt="Tipping points to preserve the Amazonia" 
+                                                   class="gallery-img">
+                                              <figcaption>AmazonTEC Conference</figcaption>
+                                            </div>
+
+
+                                          <div class="gallery-item">
+                                              <img src="images/AmazonTec1.png" 
+                                                   alt="Protecting Biodiversity in South America" 
+                                                   class="gallery-img">
+                                              <figcaption>Biodiversity Conference</figcaption>
+                                          </div>
+                                          <div class="gallery-item">
+
+                                            
+                                              <img src="images/CIAT1.png" 
+                                                   alt="Climate Action in the Amazon" 
+                                                   class="gallery-img">
+                                              <figcaption>Climate Action Conference</figcaption>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="myPop">
+                                      <span class="close">&times;</span>
+                                      <img id="img_pop" style="margin-top: 10rem;">
+                                      <h1 id="h1_pop"></h1>
+                                  </div>
+                              </section>
+                          </section>
+                          
+                          <script>
+                            const showConferencesBtn = document.getElementById("show-conferences-btn");
+                              const conferenceContainer = document.getElementById("conference-container");
+
+                              showConferencesBtn.addEventListener("click", () => {
+                                  // Toggle visibility
+                                  const isVisible = conferenceContainer.style.display === "block";
+                                  conferenceContainer.style.display = isVisible ? "none" : "block";
+                                  showConferencesBtn.textContent = isVisible ? "View Conferences" : "Hide Conferences";
+                              });
+
+                              // Existing modal functionality
+                              const images = document.getElementsByClassName("gallery-img");
+                              const pop_w = document.getElementsByClassName("myPop")[0];
+                              const pop_Img = document.getElementById("img_pop");
+                              const pop_h1 = document.getElementById("h1_pop");
+
+                              // Loop through all gallery images
+                              for (let i = 0; i < images.length; i++) {
+                                  images[i].onclick = function() {
+                                      pop_w.style.display = "block";
+                                      pop_Img.src = this.src;
+                                      pop_h1.innerHTML = this.alt;
+                                  };
+                              }
+
+                              const close_button = document.getElementsByClassName("close")[0];
+                              close_button.onclick = function() {
+                                  pop_w.style.display = "none";
+                              };
+                          </script>
+                            <!-- <script>
                                         // Get the image and insert it inside the modal
                                         const images = document.getElementsByClassName("gallery-img");
                                     //const captionText = document.getElementById("caption");
@@ -436,7 +527,7 @@
                                     pop_w.style.display = "none";
                                       }
 
-                                  </script>
+                                  </script> -->
 
                       <img
                       src="images\arrow.png"
